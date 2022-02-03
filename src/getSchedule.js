@@ -25,6 +25,7 @@ const daySchedule = (weekDay) => ({
 
 const fullSchedule = () => Object.keys(hours).reduce((acc, weekDay) =>
   Object.assign(acc, daySchedule(weekDay)), {});
+// referência https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 
 function getSchedule(scheduleTarget) {
   // busca dias disponiveis caso o parametro seja o nome da especie
